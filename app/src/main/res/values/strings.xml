@@ -4,4 +4,6 @@
     <string name="button_true">True</string>
     <string name="button_false">False</string>
     <string name="question_text">A is the capital of Australia</string>
+    <string name="notif_correct">Correct!</string>
+    <string name="notif_incorrect">Incorrect.</string>
 </resources>
