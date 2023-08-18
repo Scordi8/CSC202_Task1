@@ -3,7 +3,14 @@
     <string name="button_start">Start Quiz</string>
     <string name="button_true">True</string>
     <string name="button_false">False</string>
-    <string name="question_text">A is the capital of Australia</string>
+    <string name="button_previous">Prev</string>
+    <string name="button_next">Next</string>
+    <string name="question_text">Loading Question</string>
     <string name="notif_correct">Correct!</string>
     <string name="notif_incorrect">Incorrect.</string>
+
+    <string name="q_aus1">Australia is the smallest continent</string>
+    <string name="q_vatican">Vatican City is a country</string>
+    <string name="q_trickQuestion">The answer is true</string>
+
 </resources>

@@ -70,5 +70,30 @@
                 android:layout_weight="1"
                 android:text="@string/button_false" />
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/directions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ButtonPrev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button_previous"
+                app:icon="@drawable/arrow_left" />
+
+            <Button
+                android:id="@+id/ButtonNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button_next"
+                android:textAlignment="center"
+                app:icon="@drawable/arrow_right"
+                app:iconGravity="end" />
+        </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
