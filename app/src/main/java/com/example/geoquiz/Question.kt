@@ -1,6 +1,4 @@
 package com.example.geoquiz
 
 import androidx.annotation.StringRes
-data class Question (@StringRes val textResId : Int, val answer : Boolean){
-
-}
+data class Question (@StringRes val textResId : Int, val answer : Boolean, var hasCheated:Boolean = false)

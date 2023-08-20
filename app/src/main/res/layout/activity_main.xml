@@ -69,7 +69,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/button_false" />
+
         </LinearLayout>
+
+        <Button
+            android:id="@+id/ButtonCheat"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_cheat" />
 
         <LinearLayout
             android:id="@+id/directions"

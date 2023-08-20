@@ -5,12 +5,25 @@
     <string name="button_false">False</string>
     <string name="button_previous">Prev</string>
     <string name="button_next">Next</string>
-    <string name="question_text">Loading Question</string>
+    <string name="button_cheat">Cheat?</string>
+    <string name="button_yesCheat">Yes, cheat.</string>
+    <string name="button_noCheat">Go back.</string>
+
+    <string name="cheat_true">The answer is True</string>
+    <string name="cheat_false">The answer is False</string>
+
     <string name="notif_correct">Correct!</string>
     <string name="notif_incorrect">Incorrect.</string>
+    <string name="notif_cheat">Cheating is wrong,</string>
 
+    <string name="question_text">Loading Question</string>
+    <string name="question_cheat">Are you sure you want to this?</string>
     <string name="q_aus1">Australia is the smallest continent</string>
     <string name="q_vatican">Vatican City is a country</string>
-    <string name="q_trickQuestion">The answer is true</string>
+    <string name="q_continents">There are 6 continents</string>
+    <string name="q_oceans">There are 6 named oceans of the world</string>
+    <string name="q_aus2">Australia has 4 timezones</string>
+
+
 
 </resources>
