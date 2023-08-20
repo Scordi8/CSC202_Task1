@@ -111,7 +111,7 @@ class MainActivity : AppCompatActivity() {
         toastCheating = Toast.makeText(
             this,
             resources.getString(R.string.notif_cheat),
-            2
+            Toast.LENGTH_SHORT
         )
 
 
@@ -142,9 +142,21 @@ class MainActivity : AppCompatActivity() {
 
     private fun changeQuestion(offset:Int, forceUpdate:Boolean=false){
         val oldDI : Int = displayIndex
+
+        if(displayIndex+offset==qvm.questionBank.size){
+            binding.Question.text = resources.getString(R.string.title_complete)
+            binding.ButtonNext.text = resources.getString(R.string.button_exit)
+        }
+        else{
+            binding.ButtonNext.text = resources.getString(R.string.button_next)
+        }
+        if(displayIndex==qvm.questionBank.size && offset==1){
+            finish()
+            return
+        }
+
         displayIndex = max(0, min(displayIndex+offset, activeIndex))
-        if ((oldDI==displayIndex && !forceUpdate)||
-            (displayIndex >= qvm.questionBank.size)){
+        if ((oldDI==displayIndex && !forceUpdate)|| (displayIndex >= qvm.questionBank.size)){
                 return}// Display Index hasn't changed, no need to update
 
         binding.Question.text = resources.getString(qvm.questionBank[displayIndex].textResId)
